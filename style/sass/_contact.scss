@@ -5,7 +5,7 @@
 
     h3,
     h4 {
-        font-size: 6rem;
+        font-size: 7rem;
     }
     
 
@@ -63,13 +63,39 @@
         }
     }
 
+    .socialContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 90px;
+    }
+
+
+
+
+    .fab {
+        color:$darkColor;
+        margin-right:60px;
+        font-size: 4rem;
+    }
+
+
     .email {
         display: flex;
+        padding-right:60px;
+        font-size:3rem;
+        
+
+        span {
+            display: block;
+        }
+        
 
         .designLine {
             width:1px;
             background-color: $darkColor;
-            height:100px;
+            height:180px;
+            margin:0 15px;
         }
     }
+
 }
