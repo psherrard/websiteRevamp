@@ -62,4 +62,14 @@
            
         }
     }
+
+    .email {
+        display: flex;
+
+        .designLine {
+            width:1px;
+            background-color: $darkColor;
+            height:100px;
+        }
+    }
 }
