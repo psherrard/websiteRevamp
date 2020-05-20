@@ -234,12 +234,44 @@ textarea {
 html {
   background-color: #d9d9d9;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
   max-width: 1280px;
   width: 90%;
   margin: 0 auto;
+}
+
+button {
+  padding: 12px 30px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-bottom: 5px solid #ffffff;
+  font-family: "Gilroy Light";
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+button:hover,
+button:focus {
+  border-bottom: 5px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+button:active {
+  border-bottom: 5px solid #bdefff;
+  color: #fc8787;
+}
+
+.designCircle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 header {
@@ -252,23 +284,36 @@ header .designLine {
   background-color: #000000;
 }
 
+header .navImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 header nav {
-  padding-top: 60px;
-  margin-bottom: 210px;
+  padding-top: 40px;
+  margin-bottom: 200px;
+}
+
+header img {
+  width: 275px;
+  height: 100%;
 }
 
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 header ul li {
   margin-left: 50px;
-  border-bottom: 1px solid #000000;
   font-family: "Gilroy Light";
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -277,26 +322,36 @@ header ul li {
 header ul a {
   text-decoration: none;
   color: #000000;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 3px;
 }
 
-header ul li:first-child:hover {
-  background-color: red;
-}
-
-header nav ul:first-child {
-  color: blue;
+header ul a:hover {
+  padding-bottom: 0px;
+  border-bottom: 3px solid #000000;
 }
 
 header h1 {
   font-family: "Gilroy ExtraBold";
-  font-size: 6rem;
+  font-size: 6.5rem;
+  color: #000000;
+}
+
+header h2 {
+  font-family: "acumin-pro-wide", sans-serif;
+  font-size: 4.5rem;
+  letter-spacing: 1px;
+}
+
+header h1,
+header h2 {
   text-transform: uppercase;
 }
 
 header h1,
 header h2,
 header p {
-  margin: 30px 0;
+  margin: 25px 0;
 }
 
 header p {
@@ -323,19 +378,317 @@ header .circleContainer {
           justify-content: flex-end;
 }
 
-header .circleContainer .designCircle {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-left: 50px;
-  margin-top: 30px;
-}
-
 header .circleContainer .blueCircle {
   background-color: #bdefff;
 }
 
 header .circleContainer .blackCircle {
   background-color: #000000;
+}
+
+header .circleContainer .blueCircle,
+header .circleContainer .blackCircle {
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.about h3,
+.about h4 {
+  font-size: 6rem;
+}
+
+.about h3 {
+  margin-left: 20px;
+  margin-bottom: 60px;
+}
+
+.about h4 {
+  color: #bdefff;
+  position: absolute;
+  top: 80px;
+  z-index: -1;
+}
+
+.about .redCircle {
+  background-color: #fc8787;
+  position: absolute;
+  top: 125px;
+  left: 252px;
+}
+
+.about h3,
+.about h4,
+.about p {
+  font-family: "Gilroy Light";
+  text-transform: uppercase;
+}
+
+.about div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.about div p {
+  width: 65%;
+  font-size: 3rem;
+  line-height: 40px;
+  margin-right: 100px;
+}
+
+.about div p strong {
+  font-family: "Gilroy ExtraBold";
+}
+
+.about div img {
+  width: 300px;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.projects {
+  padding-top: 60px;
+}
+
+.projects div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects h3 {
+  font-size: 6rem;
+  font-family: "Gilroy Light";
+  margin-bottom: 60px;
+}
+
+.projects h4 {
+  font-family: "Gilroy ExtraBold";
+  font-size: 5.5rem;
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+
+.projects h3,
+.projects h4 {
+  text-transform: uppercase;
+}
+
+.projects img {
+  width: 275px;
+  height: 100%;
+}
+
+.projects .projectLine {
+  width: 100%;
+}
+
+.projects .projectLine,
+.projects .oddLine,
+.projects .evenLine {
+  height: 8px;
+  background-color: #fc8787;
+}
+
+.projects .oddLine,
+.projects .evenLine {
+  width: 40%;
+}
+
+.projects .oddGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects .oddGroup p:nth-child(3) {
+  padding-left: 25%;
+}
+
+.projects .oddGroup p:nth-child(5) {
+  text-transform: uppercase;
+  font-family: "acumin-pro-wide", sans-serif;
+  font-size: 2.5rem;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.projects .oddGroup button {
+  margin-left: 60px;
+}
+
+.projects .evenGroup p:nth-child(3) {
+  padding-right: 25%;
+}
+
+.projects .evenGroup p:nth-child(5) {
+  text-transform: uppercase;
+  font-family: "acumin-pro-wide", sans-serif;
+  font-size: 2.5rem;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
+.projects .evenGroup button {
+  margin-right: 60px;
+}
+
+.projects p:nth-child(3) {
+  font-family: "Gilroy Light";
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.skills {
+  margin-top: 180px;
+  text-transform: uppercase;
+}
+
+.skills h3 {
+  font-size: 6rem;
+  font-family: "Gilroy Light";
+  margin-bottom: 30px;
+}
+
+.skills .designLineThic,
+.skills .designLineThin {
+  width: 90%;
+}
+
+.skills .designLineThic {
+  height: 35px;
+  background-color: #000000;
+}
+
+.skills .designLineThin {
+  height: 8px;
+  background: #bdefff;
+  margin-top: 10px;
+}
+
+.skills .skillsGrid {
+  margin-top: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 60px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.skills .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .icon img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.skills .icon p {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+.contact {
+  margin-top: 180px;
+  position: relative;
+}
+
+.contact h3,
+.contact h4 {
+  font-size: 6rem;
+}
+
+.contact h4 {
+  color: #bdefff;
+  position: absolute;
+  margin-bottom: 0px;
+  top: 15px;
+  z-index: -1;
+}
+
+.contact h3,
+.contact h4,
+.contact p {
+  font-family: "Gilroy Light";
+  text-transform: uppercase;
+}
+
+.contact form {
+  margin-top: 120px;
+}
+
+.contact form .formTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.contact form .formTop input[type="email"],
+.contact form .formTop input[type="text"] {
+  border: none;
+  background-color: unset;
+  border-bottom: 8px solid #000000;
+  padding-right: 170px;
+  padding-bottom: 10px;
+  font-family: "Gilroy Light";
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.contact form .formBottom textarea {
+  margin-top: 30px;
+  resize: none;
+  background-color: unset;
+  width: 100%;
+  margin-bottom: 50px;
+  border: none;
+  border-bottom: 8px solid #000000;
+  font-family: "Gilroy Light";
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=styles.css.map */

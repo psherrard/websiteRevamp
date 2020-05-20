@@ -1,6 +1,7 @@
 html {
     background-color: $backgroundColor;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -8,4 +9,34 @@ html {
     width:90%;
     margin:0 auto;
 
+}
+
+button {
+    padding:12px 30px;
+    background-color: $darkColor;
+    color:$lightColor;
+    border:none;
+    border-bottom: 5px solid $lightColor;
+    font-family: $fontTwo;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    transition: all ease-in 0.2s;
+}
+
+button:hover,
+button:focus {
+    border-bottom:5px solid $darkColor;
+    background-color: $lightColor;
+    color:$darkColor;
+}
+
+button:active {
+    border-bottom:5px solid $primaryColor;
+    color:$secondaryColor;
+}
+
+.designCircle {
+    width:30px;
+    height:30px;
+    border-radius: 50%;
 }

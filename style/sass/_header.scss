@@ -7,57 +7,67 @@ header {
         background-color:$darkColor;
     }
 
-    nav {
-        padding-top:60px;
-        margin-bottom: 210px;
+    .navImg {
+        display: flex;
+        justify-content:space-between;
     }
+
+    nav {
+        padding-top:40px;
+        margin-bottom: 200px;
+    }
+
+    img {
+            width:275px;
+            height:100%;
+        }
     
     ul {
         display: flex;
-        justify-content: flex-end;
+        justify-content: right;
+       
         
         li {
             margin-left:50px;
-            border-bottom: 1px solid $darkColor;
             font-family: $fontTwo;
             font-size: 1.8rem;
             text-transform: uppercase;  
         }
-
         
         a {
             text-decoration: none;
             color: $darkColor;
+            border-bottom: 1px solid $darkColor;
+            padding-bottom: 3px;
         }
-        li:first-child:hover {
-            background-color:red;
+        a:hover {
+            padding-bottom: 0px;
+            border-bottom: 3px solid $darkColor;
         }
     }
-
-    
-    
-    nav {
-        ul:first-child {
-              color:blue;
-          }
-    }
-
    
 
     h1 {
         font-family: $fontOne;
-        font-size: 6rem;
-        text-transform: uppercase;
+        font-size: 6.5rem;
+        color:$darkColor
     }
 
-    // h2 {
-        
-    // }
+    h2 {
+        font-family: $fontThree;
+        font-size: 4.5rem;
+        letter-spacing: 1px;
+    }
+
+    h1,
+    h2 {
+        text-transform: uppercase;
+    }
 
     h1,
     h2,
     p {
-        margin:30px 0;
+        margin:25px 0;
     }
 
     p {
@@ -79,13 +89,7 @@ header {
         justify-content: flex-end;
         
 
-        .designCircle {
-            width:30px;
-            height:30px;
-            border-radius: 50%;
-            margin-left:50px;
-            margin-top:30px;
-        }
+        
     
         .blueCircle {
             background-color: $primaryColor;
@@ -93,6 +97,12 @@ header {
     
         .blackCircle {
             background-color: $darkColor;
+        }
+
+        .blueCircle,
+        .blackCircle {
+            margin-left:50px;
+            margin-top:25px;
         }
     }
 

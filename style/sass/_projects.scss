@@ -1,0 +1,107 @@
+// projectLine oddLine
+.projects {
+    padding-top: 60px;
+
+    div:nth-child(1){
+        display: flex;
+    }   
+
+    h3 {
+        font-size: 6rem;
+        font-family: $fontTwo;
+        margin-bottom: 60px;
+        
+    }
+
+    h4 {
+        font-family: $fontOne;
+        font-size:5.5rem;
+        margin-top:120px;
+        margin-bottom: 30px;
+    }
+
+    h3,
+    h4 {
+        text-transform: uppercase;
+    }
+
+    img {
+            width:275px;
+            height:100%;
+    }
+
+
+
+    .projectLine {
+        width:100%;
+    }
+
+    .projectLine,
+    .oddLine,
+    .evenLine {
+        height:8px;
+        background-color:$secondaryColor;
+    }
+
+    .oddLine,
+    .evenLine {
+        width:40%;
+    }
+
+    .oddGroup {
+        display: flex;
+        text-align: right;
+        align-items: flex-end;
+        flex-direction: column;
+        
+        p:nth-child(3) {
+            padding-left:25%;
+        }
+
+        p:nth-child(5) {
+            text-transform: uppercase;
+            font-family: $fontThree;
+            font-size:2.5rem;
+            margin-top:30px;
+            margin-bottom: 60px;
+        }
+
+        button {
+            margin-left:60px;
+            
+        }
+    }
+
+    .evenGroup {
+
+        p:nth-child(3) {
+            padding-right:25%;
+        }
+
+        p:nth-child(5) {
+            text-transform: uppercase;
+            font-family: $fontThree;
+            font-size:2.5rem;
+            margin-top:30px;
+            margin-bottom:60px;
+            letter-spacing: 1px;
+        }
+
+        button {
+            margin-right:60px;
+            
+        }
+    }
+
+
+    p:nth-child(3) {
+        font-family: $fontTwo;
+        text-transform: uppercase;
+        font-size: 3rem;
+        line-height: 40px;
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+
+}
+

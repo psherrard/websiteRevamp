@@ -1,0 +1,65 @@
+.skills {
+    margin-top: 180px;
+    text-transform: uppercase;
+
+     h3 {
+        font-size: 6rem;
+        font-family: $fontTwo;
+        margin-bottom: 30px;
+    }
+
+    .designLineThic,
+    .designLineThin {
+        width:90%;
+        
+    }
+
+    .designLineThic {
+        height:35px;
+        background-color: $darkColor;
+    }
+
+    .designLineThin {
+        height:8px;
+        background: $primaryColor;
+        margin-top: 10px ;
+    }
+
+    .skillsGrid {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 60px;
+        grid-auto-rows: minmax(100px, auto);
+        // justify-content: center ;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        
+        img {
+            width:80px;
+            height:80px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-family: $fontFour;
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+        }
+
+    }
+
+
+
+
+
+
+
+
+}
