@@ -493,16 +493,6 @@ header .circleContainer .blackCircle {
   margin-left: 30px;
 }
 
-.projects .circleContainer {
-  -webkit-box-flex: flex;
-      -ms-flex: flex;
-          flex: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .projects .designCircle {
   width: 60px;
   height: 60px;
@@ -696,7 +686,7 @@ header .circleContainer .blackCircle {
   border: none;
   background-color: unset;
   border-bottom: 8px solid #000000;
-  width: 35%;
+  width: 45%;
   padding-bottom: 10px;
   font-family: "Gilroy Light";
   font-size: 2rem;
@@ -731,8 +721,9 @@ header .circleContainer .blackCircle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contact .socialIcons .fab {
@@ -849,9 +840,170 @@ footer img {
 }
 
 @media (max-width: 690px) {
+  header .circleContainer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .circleContainer .designCircle {
+    margin-left: unset;
+  }
+  .projects div:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .projects div:nth-child(1) img {
+    width: 100%;
+    margin-left: unset;
+    height: 250px;
+    margin-bottom: 60px;
+  }
+  .projects .oddGroup p:nth-child(3),
+  .projects .evenGroup p:nth-child(3) {
+    font-size: 2rem;
+  }
+  .projects .oddGroup p:nth-child(5),
+  .projects .evenGroup p:nth-child(5) {
+    font-size: 2rem;
+  }
+  .projects .oddGroup button,
+  .projects .evenGroup button {
+    margin: 0 10px;
+  }
   .skills .skillsGrid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    padding-top: 25px;
+  }
+  header nav {
+    display: none;
+  }
+  header h2 {
+    font-size: 3.5rem;
+  }
+  .projects .oddGroup,
+  .projects .evenGroup {
+    text-align: center;
+  }
+  .projects .oddGroup h4,
+  .projects .evenGroup h4 {
+    font-size: 3.5rem;
+  }
+  .projects .oddGroup p:nth-child(3),
+  .projects .evenGroup p:nth-child(3) {
+    padding: unset;
+  }
+  .projects .oddGroup .oddLine,
+  .projects .oddGroup .evenLine,
+  .projects .evenGroup .oddLine,
+  .projects .evenGroup .evenLine {
+    width: 100%;
+  }
+  .projects .circleContainer {
+    display: none;
+  }
+  .skills .designLineThic,
+  .skills .designLineThin {
+    width: 100%;
+  }
+  .contact .socialContainer .email {
+    padding-right: unset;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 458px) {
+  .projects .oddGroup button,
+  .projects .evenGroup button {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .about {
+    padding-bottom: unset;
+  }
+  .about h3,
+  .about h4 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .about h4 {
+    left: 20%;
+  }
+  .about div p {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+  .about div img {
+    width: 220px;
+  }
+  .about .redCircle {
+    top: 115px;
+    left: 290px;
+  }
+  .projects h3 {
+    font-size: 5rem;
+    margin-bottom: unset;
+    text-align: center;
+  }
+  .skills h3 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .contact h3,
+  .contact h4 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .contact h4 {
+    left: 20%;
+  }
+  .contact form .formTop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact form .formTop input[type="email"],
+  .contact form .formTop input[type="text"] {
+    width: 100%;
+  }
+  .contact form .formTop input[type="text"] {
+    margin-bottom: 30px;
+  }
+  .contact .socialIcons .fab {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 363px) {
+  header h1 {
+    font-size: 5.5rem;
+  }
+  header p {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .about .redCircle {
+    display: none;
+  }
+  .skills .skillsGrid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -42,8 +42,6 @@
             img {
                 width:100%;
                 height:270px;
-                // max-width:1280px;
-                // margin:0 auto;
             }
 
             nav {
@@ -83,6 +81,51 @@
 
 @media (max-width:690px) {
 
+    //Header 
+    header {
+        .circleContainer {
+            justify-content: space-between;
+
+            .designCircle {
+                margin-left:unset;
+            }
+        }
+
+
+    }
+
+    //Projects
+    .projects {
+
+        div:nth-child(1){
+            display: flex;
+            flex-direction: column-reverse;
+
+            img {
+                width:100%;
+                margin-left:unset;
+                height:250px;
+                margin-bottom:60px;
+            }
+        }   
+
+        .oddGroup,
+        .evenGroup {
+
+            p:nth-child(3){
+                font-size:2rem ;
+            }
+
+            p:nth-child(5){
+                font-size:2rem ;
+            }
+
+            button {
+                margin:0 10px;
+            }
+        }
+    }
+
     //Skills 
     .skills {
 
@@ -90,4 +133,219 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
+}
+
+@media (max-width:500px) {
+
+    // Hamburger Menu
+
+    //Header 
+    header {
+        padding-top:25px;
+
+        nav {
+            display: none;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+        }
+    }
+
+
+    //Projects 
+    .projects {
+
+        .oddGroup,
+        .evenGroup {
+            // justify-content: center;
+            text-align: center;
+
+            h4 {
+                font-size: 3.5rem;
+            }
+
+            p:nth-child(3){
+                padding:unset;
+            }
+
+            // button {
+            //     margin:0 10px;
+            // }
+
+            .oddLine,
+            .evenLine {
+                width:100%;
+
+                
+            }
+        }
+
+        .circleContainer {
+            display: none;
+        }
+    }
+
+    //Skills
+    .skills {
+        .designLineThic,
+        .designLineThin {
+            width:100%;
+        }
+    }
+
+    //Contact
+    .contact {
+        
+        .socialContainer {
+           
+            .email {
+                padding-right:unset;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media(max-width:458px) {
+
+    //Project
+    .projects {
+
+        .oddGroup,
+        .evenGroup {
+
+            button {
+                margin-top:30px;
+            }
+        }
+    }
+}
+
+@media (max-width:420px) {
+
+    //About
+    .about {
+
+        padding-bottom: unset;
+
+        h3,
+        h4 {
+            font-size: 5rem;
+            text-align: center;
+        }
+
+        h4 {
+            left: 20%;
+        }
+
+        div {
+            p {
+                font-size: 2rem;
+                line-height: 35px;
+            }
+
+            img {
+                width:220px;
+            }
+        }
+
+        .redCircle {
+            top: 115px;
+            left: 290px;
+        }
+    }
+
+
+    //Projects
+    .projects {
+
+        h3 {
+            font-size: 5rem;
+            margin-bottom: unset;
+            text-align: center;
+        }
+    }
+
+    //Skills
+    .skills {
+
+        h3 {
+            font-size: 5rem;
+            text-align: center;
+        }
+
+        
+    }
+
+    //Contact
+    .contact {
+
+        h3,
+        h4 {
+            font-size: 5rem;
+            text-align: center;
+        }
+
+        h4 {
+            left:20%;
+        }
+
+        form {
+
+            .formTop {
+                flex-direction: column;
+                align-items: center;
+
+                input[type="email"],
+                input[type="text"] {
+                    width:100%;
+                }
+
+                input[type="text"] {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .socialIcons {
+
+            .fab {
+                font-size: 2.2rem;
+            }
+        }
+
+    }
+}
+
+@media (max-width:363px) {
+
+    //Header 
+    header {
+
+        h1 {
+            font-size:5.5rem;
+        }
+
+        p {
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+
+    //About
+    .about {
+        .redCircle {
+            display: none;
+        }
+    }
+
+    //Skills 
+    .skills {
+
+        .skillsGrid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
 }
