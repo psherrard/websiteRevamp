@@ -274,8 +274,100 @@ button:active {
   border-radius: 50%;
 }
 
+.b-a, .bar, .bar:before, .bar:after {
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.menu-collapsed {
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  position: fixed;
+  top: 10px;
+  left: 9px;
+  height: 36px;
+  width: 36px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.menu-collapsed ul {
+  -webkit-transition: all 0s;
+  transition: all 0s;
+  position: fixed;
+  left: -9000px;
+}
+
+.bar {
+  position: fixed;
+  left: 12px;
+  top: 24px;
+}
+
+.bar:before {
+  top: -8px;
+}
+
+.bar:after {
+  top: 8px;
+}
+
+.b-a-expanded, .menu-expanded .bar:before, .menu-expanded .bar:after {
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  top: -0px;
+}
+
+.menu-expanded {
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  text-align: center;
+  line-height: 200px;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.menu-expanded ul {
+  -webkit-transition: all 0s;
+  transition: all 0s;
+  position: relative;
+  left: 0;
+  z-index: 2;
+}
+
+.menu-expanded .bar {
+  background-color: transparent;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.menu-expanded .bar:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu-expanded .bar:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 header {
   height: 100vh;
+}
+
+header .menu-collapsed {
+  display: none;
 }
 
 header .designLine {
@@ -887,8 +979,28 @@ footer img {
   header {
     padding-top: 25px;
   }
-  header nav {
+  header .navImg nav {
     display: none;
+  }
+  header .menu-collapsed {
+    display: inline-block;
+  }
+  header .menu-collapsed ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .menu-collapsed ul li {
+    margin-left: unset;
+    height: 110px;
+  }
+  header .menu-collapsed ul a {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
   }
   header h2 {
     font-size: 3.5rem;

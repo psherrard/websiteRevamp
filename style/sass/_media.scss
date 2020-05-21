@@ -138,14 +138,35 @@
 
 @media (max-width:500px) {
 
-    // Hamburger Menu
-
     //Header 
     header {
         padding-top:25px;
 
-        nav {
-            display: none;
+        .navImg{
+
+            nav {
+                display: none;
+            }
+        }
+
+        .menu-collapsed {
+            display: inline-block;
+            
+
+            ul {
+                justify-content: center;
+                flex-direction: column;
+
+                li {
+                    margin-left: unset;
+                    height: 110px;
+                }
+
+                a {
+                    color: $lightColor;
+                    border-bottom: 1px solid $lightColor;
+                }
+            }
         }
 
         h2 {
