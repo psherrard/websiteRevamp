@@ -41,7 +41,7 @@
     <main>
         <section class="about wrapper" id="about">
             <h3>About</h3>
-            <h4>About</h4>
+            <h4 aria-hidden="true">About</h4>
             <div class="designCircle redCircle"></div>
             <div>
                 <p>I’m a <strong>Front-End Web Developer</strong> who is self-motivated, organized and energetic with previous experience in <strong>event management, graphic design, and commercial camera</strong> work. I am looking to merge my strong artistic, communication and people skills with my technical knowledge in a creative environment.</p>
@@ -151,7 +151,7 @@
         </section>
         <section class="contact wrapper" id="contact">
             <h3>Contact</h3>
-            <h4>Contact</h4>
+            <h4 aria-hidden="true">Contact</h4>
             <form action="">
                 <div class="formTop">
                     <label class="visuallyHidden" for="name">Name</label>
@@ -167,14 +167,15 @@
             </form>
             <div class="socialContainer">
                 <div class="socialIcons">
-                    <a href="https://twitter.com/home" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.linkedin.com/in/patrick-sherrard-53469a122/" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://github.com/psherrard" target="_blank"><i class="fab fa-github"></i></a>
+                    <div><a href="https://twitter.com/home" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+                    <div><a href="https://www.linkedin.com/in/patrick-sherrard-53469a122/" target="_blank"><i class="fab fa-twitter"></i></a></div>
+                    <div><a href="https://github.com/psherrard" target="_blank"><i class="fab fa-github"></i></a></div>
                 </div>
                 <div class="email">
                     <p>email</p>
                     <div class="designLine"></div>
-                    <p>patsherrard<span>@gmail.com</span></p>
+                    <!-- add link to email here -->
+                    <a href="mailto:patsherrard@gmail.com"><p>patsherrard<span>@gmail.com</span></p></a>
                 </div>
             </div>
         </section>

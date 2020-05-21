@@ -307,9 +307,9 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 header ul li {
@@ -696,7 +696,7 @@ header .circleContainer .blackCircle {
   border: none;
   background-color: unset;
   border-bottom: 8px solid #000000;
-  padding-right: 170px;
+  width: 35%;
   padding-bottom: 10px;
   font-family: "Gilroy Light";
   font-size: 2rem;
@@ -726,10 +726,22 @@ header .circleContainer .blackCircle {
   margin-top: 90px;
 }
 
-.contact .fab {
+.contact .socialIcons {
+  width: 28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact .socialIcons .fab {
   color: #000000;
-  margin-right: 60px;
   font-size: 4rem;
+}
+
+.contact .socialIcons .fab:hover {
+  color: #fc8787;
 }
 
 .contact .email {
@@ -738,6 +750,16 @@ header .circleContainer .blackCircle {
   display: flex;
   padding-right: 60px;
   font-size: 3rem;
+}
+
+.contact .email a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.contact .email a:active,
+.contact .email a:hover {
+  color: #fc8787;
 }
 
 .contact .email span {
@@ -760,5 +782,76 @@ footer img {
   width: 100%;
   height: 200px;
   padding-top: 60px;
+}
+
+@media (max-width: 923px) {
+  .about {
+    margin-top: 90px;
+  }
+  .about div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about div p {
+    margin-right: 0px;
+    text-align: center;
+    margin-top: 30px;
+    width: 90%;
+  }
+  .about a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 850px) {
+  header .navImg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  header .navImg img {
+    width: 100%;
+    height: 270px;
+  }
+  header .navImg nav {
+    margin-bottom: 30px;
+  }
+  header .navImg nav ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header .navImg nav ul li {
+    margin-left: unset;
+  }
+}
+
+@media (max-width: 745px) {
+  .contact .socialIcons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .socialIcons .fab {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .skills .skillsGrid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
