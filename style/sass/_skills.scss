@@ -2,6 +2,7 @@
     margin-top: 120px;
     padding-top:60px;
     text-transform: uppercase;
+    
 
      h3 {
         font-size: 7rem;
@@ -36,16 +37,20 @@
     }
 
     .icon {
+        filter: grayscale(100%);
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        
+        
 
         
         img {
             width:80px;
             height:80px;
             margin-bottom: 10px;
+            
         }
 
         p {

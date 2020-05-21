@@ -637,7 +637,7 @@ header .circleContainer .blackCircle {
   margin-bottom: 60px;
 }
 
-.projects .oddGroup a {
+.projects .oddGroup button {
   margin-left: 60px;
 }
 
@@ -706,6 +706,8 @@ header .circleContainer .blackCircle {
 }
 
 .skills .icon {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
