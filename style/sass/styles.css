@@ -546,7 +546,7 @@ header .circleContainer .blackCircle {
   margin-bottom: 60px;
 }
 
-.projects .oddGroup button {
+.projects .oddGroup a {
   margin-left: 60px;
 }
 
@@ -644,6 +644,7 @@ header .circleContainer .blackCircle {
 
 .contact {
   margin-top: 180px;
+  padding-top: 50px;
   position: relative;
 }
 
@@ -656,7 +657,7 @@ header .circleContainer .blackCircle {
   color: #bdefff;
   position: absolute;
   margin-bottom: 0px;
-  top: 15px;
+  top: 25px;
   z-index: -1;
 }
 
@@ -798,6 +799,7 @@ footer img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-decoration: none;
   }
   .projects img {
     width: 40%;
@@ -931,6 +933,7 @@ footer img {
 
 @media (max-width: 420px) {
   .about {
+    margin-top: 120px;
     padding-bottom: unset;
   }
   .about h3,

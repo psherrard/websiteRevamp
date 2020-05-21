@@ -1,5 +1,6 @@
 .contact {
     margin-top:180px;
+    padding-top:50px;
     position: relative;
     
 
@@ -13,7 +14,7 @@
         color:$primaryColor;
         position: absolute;
         margin-bottom: 0px;
-        top: 15px;
+        top: 25px;
         z-index: -1;
     }
 
@@ -37,7 +38,6 @@
                 border:none;
                 background-color: unset;
                 border-bottom:8px solid $darkColor;
-                // padding-right:170px;
                 width:45%;
                 padding-bottom:10px;
                 font-family: $fontTwo;
