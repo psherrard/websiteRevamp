@@ -2,7 +2,7 @@
 
     //About
     .about {
-        margin-top:90px;
+        // margin-top:90px;
 
         div {
             flex-direction: column-reverse;
@@ -157,9 +157,11 @@
                 justify-content: center;
                 flex-direction: column;
 
+
                 li {
                     margin-left: unset;
-                    height: 110px;
+                    padding-top:30px;
+                    height: 100px;
                 }
 
                 a {
@@ -171,6 +173,20 @@
 
         h2 {
             font-size: 3.5rem;
+        }
+    }
+
+    //About
+    .about {
+        margin-top: 160px;
+
+        h3,
+        h4 {
+            margin-top:120px;
+        }
+
+        .redCircle {
+            display: none;
         }
     }
 
@@ -225,6 +241,22 @@
     }
 }
 
+// @media(max-height:610px) {
+
+//     //Mobile Nav 
+//     .menu-collapsed {
+
+//             ul {
+
+//                 li {
+//                     margin-left: unset;
+//                     height: 20px;
+//                 }
+//             }
+//         }
+
+// }
+
 @media(max-width:458px) {
 
     //Project
@@ -244,7 +276,6 @@
 
     //About
     .about {
-        margin-top:120px;
 
         padding-bottom: unset;
 
@@ -352,12 +383,7 @@
         }
     }
 
-    //About
-    .about {
-        .redCircle {
-            display: none;
-        }
-    }
+    
 
     //Skills 
     .skills {
