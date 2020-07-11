@@ -259,7 +259,11 @@ button {
 button:hover,
 button:focus {
   border-bottom: 5px solid #bdefff;
+}
+
+button:hover {
   background-color: #ffffff;
+  color: #fc8787;
 }
 
 button:active {
@@ -844,6 +848,10 @@ header .circleContainer .blackCircle {
 
 .contact .socialIcons .fab:hover {
   color: #fc8787;
+}
+
+.contact .socialIcons a {
+  height: 40px;
 }
 
 .contact .email {

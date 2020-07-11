@@ -28,16 +28,17 @@ button {
 button:hover,
 button:focus {
     border-bottom:5px solid $primaryColor;
+    
+}
+
+button:hover {
     background-color: $lightColor;
-
-
-
+    color:$secondaryColor;
 }
 
 
 button:active {
     border-bottom:5px solid $darkColor;
-    
     color:$darkColor;
 }
 

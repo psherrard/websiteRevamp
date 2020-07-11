@@ -83,7 +83,11 @@
         }
 
         .fab:hover {
-        color: $secondaryColor;
+            color: $secondaryColor;
+        }
+
+        a {
+            height:40px;
         }
 
     }
