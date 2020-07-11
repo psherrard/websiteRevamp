@@ -66,6 +66,7 @@
         align-items: flex-end;
         flex-direction: column;
         
+        
         p:nth-child(3) {
             padding-left:25%;
         }
@@ -80,7 +81,15 @@
 
         button {
             margin-left:60px;
-            
+
+            a {
+                text-decoration: none;
+                color: white;
+            } 
+
+            a:hover {
+                color:$secondaryColor;
+            }
         }
     }
 
@@ -102,7 +111,16 @@
         button {
             margin-right:60px;
             
-        }
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            a:hover {
+                color:$secondaryColor;
+            }
+        }    
+
     }
 
 

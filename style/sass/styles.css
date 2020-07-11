@@ -258,14 +258,13 @@ button {
 
 button:hover,
 button:focus {
-  border-bottom: 5px solid #000000;
+  border-bottom: 5px solid #bdefff;
   background-color: #ffffff;
-  color: #000000;
 }
 
 button:active {
-  border-bottom: 5px solid #bdefff;
-  color: #fc8787;
+  border-bottom: 5px solid #000000;
+  color: #000000;
 }
 
 .designCircle {
@@ -641,6 +640,15 @@ header .circleContainer .blackCircle {
   margin-left: 60px;
 }
 
+.projects .oddGroup button a {
+  text-decoration: none;
+  color: white;
+}
+
+.projects .oddGroup button a:hover {
+  color: #fc8787;
+}
+
 .projects .evenGroup p:nth-child(3) {
   padding-right: 25%;
 }
@@ -656,6 +664,15 @@ header .circleContainer .blackCircle {
 
 .projects .evenGroup button {
   margin-right: 60px;
+}
+
+.projects .evenGroup button a {
+  text-decoration: none;
+  color: white;
+}
+
+.projects .evenGroup button a:hover {
+  color: #fc8787;
 }
 
 .projects p:nth-child(3) {

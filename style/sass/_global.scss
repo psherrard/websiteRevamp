@@ -21,18 +21,24 @@ button {
     text-transform: uppercase;
     font-size: 2.5rem;
     transition: all ease-in 0.2s;
+
+    
 }
 
 button:hover,
 button:focus {
-    border-bottom:5px solid $darkColor;
+    border-bottom:5px solid $primaryColor;
     background-color: $lightColor;
-    color:$darkColor;
+
+
+
 }
 
+
 button:active {
-    border-bottom:5px solid $primaryColor;
-    color:$secondaryColor;
+    border-bottom:5px solid $darkColor;
+    
+    color:$darkColor;
 }
 
 .designCircle {
